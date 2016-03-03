@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>html() and val() Madlib</title>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script>
+    $(function(){
+      
+      $('button').click(function(){
+        // get the inputs from the user
+        
+        var story = "There once was a " +
+                    adj + " hobbit named " + name + ". " + 
+                    name + " liked to eat " + color2 +" " + noun + ".";
+        
+        
+        // and make the story appear on the screen
+        // set the color of the story to story 1
+        
+        
+        // BONUS! make color2 appear as THAT color in the story!
+        
+      });
+      
+    });
+  </script>
+</head>
+<body>
+  
+  Adjective: <input id="adj"><br>
+  Plural Noun: <input id="noun"><br>
+  Name: <input id="name"><br>
+  Color: <input id="color1"><br>
+  Color: <input id="color2"><br>
+  <button>Generate Madlib!</button>
+  
+  <p></p>
+  
+</body>
+</html>
