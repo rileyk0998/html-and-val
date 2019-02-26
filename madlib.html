@@ -11,16 +11,24 @@
       $('button').click(function(){
         // get the inputs from the user
         
+        var adj = $("#adj").val();
+        var noun = $("#noun").val();
+        var name = $("#name").val();
+        var color1 = $("#color1").val();
+        var color2 = $("#color2").val();
+        
         var story = "There once was a " +
                     adj + " hobbit named " + name + ". " + 
                     name + " liked to eat " + color2 +" " + noun + ".";
         
-        
+
         // and make the story appear on the screen
         // set the color of the story to color1
-        
-        
+        $("p").css('color', color1);
+        $("p").html(story);
         // Extension! Make color2 appear as THAT color in the story!
+        $("#color2").css('color', color2)
+        
         
       });
       

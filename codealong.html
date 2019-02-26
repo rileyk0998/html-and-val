@@ -10,9 +10,22 @@
       
       // get the h2 to say "the text above says" and then say the same thing as the h1
       
+      // var h1text = $('h1').html();
+
+      // $('h2').html("The text above says " + h1text); 
+      $('h2').html("The text above says " + $('h1').html());
       
       // make it so that when the user types in a color to the first box,
       // pressing Change color! will make both boxes be that color and have that word inside
+      
+      $('button').click(function(){
+        var colorUser = $("#colorUser").val();
+        // console.log("the button was clicked!")
+        // console.log(colorUser);
+        $('input').css('background-color', colorUser).val(colorUser);
+        // $('#colorMirror').val(colorUser);
+      });
+      
 
     });
   </script>
